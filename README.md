@@ -7,5 +7,5 @@ For bucket's (Anubhav Saxena) homebrew projects and security testing.
 
 Custom encryption and decryption algorithm script built on custom substitution set, uses user's custom encryption key.
 
-Execute Ruby script HackSaw_v1.0 in shell.
+Execute Ruby script HackSaw_v1.0 in shell.<br>
 On first run, set custom encryption key of integer value.
