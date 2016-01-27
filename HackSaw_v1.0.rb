@@ -3,8 +3,6 @@
 # HackSaw_v1.0 by bucket (Anubhav Saxena)
 # For bucket's homebrew projects and security testing.
 
-# Symmetric key substitution hash
-
 system "clear"
 
 #Initialize Hash and key variable.
@@ -51,7 +49,7 @@ end
 sleep(1)
 
 begin
-puts "Select a process :"
+puts "> Select a process :\n\n"
 puts "> 1. Start HackSaw Encryptor"
 puts "> 2. Start HackSaw Decryptor"
 puts "> 3. Change Encryption Key"
@@ -63,28 +61,27 @@ selector = gets.chomp
 case selector
 when "1"
   # bucket's HackSaw Algorithm Encryption
-  puts "\nCustom encryption key set (%d)" % [userKey]
+  puts "\n> Custom encryption key set (%d)\n\n" % [userKey]
   sleep(1)
-  puts "Paste string to encrypt :\n"
+  print "> Paste string to encrypt : "
   toEncrypt = gets.chomp
-  print "Encrypting String ."
+  print "\n> Encrypting String ."
   begin
     print "."
     sleep(0.25)
     $i += 1;
   end while $i < 8
   puts "."
-  sleep(2)
 
-  # Decryption algorithm using modular addition
+  # Decryption algorithm using modular subtraction
   pointer = 0
   scanner = 0
   encryptedChar = ''
   encryptedString = ""
   begin
     finalChar = symhash[toEncrypt[pointer]] + userKey
-    while finalChar > 33 do
-    finalChar -= 33
+    while finalChar > 34 do
+    finalChar -= 34
     end
     symhash.each do |key, array|
       if array == finalChar
@@ -94,23 +91,23 @@ when "1"
     encryptedString += encryptedChar
     pointer += 1
   end while pointer < toEncrypt.length
-  puts "Encrypted String = %s" % [encryptedString]
+  puts "> Encrypted String = %s" % [encryptedString]
+
   puts "\n"
 
 when "2"
   # bucket's HackSaw Algorithm Decryption
-  puts "\nCustom decryption key set (%d)" % [userKey]
+  puts "\nCustom decryption key set (%d)\n\n" % [userKey]
   sleep(1)
-  puts "Paste string to decrypt :\n"
+  print "> Paste string to decrypt : "
   todecrypt = gets.chomp
-  print "Decrypting String ."
+  print "\nDecrypting String ."
   begin
     print "."
     sleep(0.25)
     $i += 1;
   end while $i < 11
   puts "."
-  sleep(2)
 
   # Decryption algorithm using modular addition
   pointer = 0
@@ -122,8 +119,8 @@ when "2"
     if finalChar < 0
       finalChar = -finalChar
     end
-    while finalChar > 33 do
-    finalChar -= 33
+    while finalChar > 34 do
+    finalChar -= 34
     end
     symhash.each do |key, array|
       if array == finalChar
@@ -133,25 +130,28 @@ when "2"
     decryptedString += decryptedChar
     pointer += 1
   end while pointer < todecrypt.length
-  puts "Decrypted String = %s" % [decryptedString]
+  puts "> Decrypted String = %s" % [decryptedString]
   puts "\n"
 
 when "3"
   # Deletes old keys.txt and creates new file with custom encryption key.
-  puts "Old encryption key (%d)" % [userKey]
-  puts "Enter new encryption key: "
+  puts "\n> Old encryption key (%d)\n\n" % [userKey]
+  print "> Enter new encryption key: "
   userKey = gets.chomp
   File.open("keys.txt", "w") do |f|
   f.write(userKey)
   f.write("\n#DO NOT MODIFY!")
   end
-  puts "New encryption key set (%d)" % [userKey]
+  puts "\n> New encryption key set (%d)" % [userKey]
   puts "\n"
 end
 
 # Quits HackSaw
 end while selector != "4"
 
-puts "Killing HackSaw."
+puts "\n> Killing HackSaw."
 sleep(1)
-puts "Success."
+puts "\n> Success."
+sleep(1)
+
+system "clear"
