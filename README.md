@@ -1,11 +1,13 @@
 # Project HackSaw_v1.0
 
-<b>NOTE : This is version 1.0, only to test speed in Unix shell environment.</b>
-<br>Version 2.0 will be a different algorithm, much more secure than this.
+*Smoke testing for HackSaw_v3.0*
 
-For bucket's (Anubhav Saxena) homebrew projects and security testing.
+An encryption algorithm by Anubhav Saxena (xhpwn)
 
-Custom encryption and decryption algorithm script built on custom substitution set, uses user's custom encryption key.
+Work in progress for MD5 and SHA-256 hashing of strings
 
-Execute Ruby script HackSaw_v1.0 in shell.<br>
+```
+$ ruby HackSaw_v1.0
+```
+
 On first run, set custom encryption key of integer value.
