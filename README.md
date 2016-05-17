@@ -1,4 +1,4 @@
-# Project HackSaw_v3.0
+# HackSaw_v3.0
 
 *Smoke testing for HackSaw_v4.0*
 
