@@ -1,13 +1,12 @@
-# Project HackSaw_v1.0
+# Project HackSaw_v3.0
 
-*Smoke testing for HackSaw_v3.0*
+*Smoke testing for HackSaw_v4.0*
 
-An encryption algorithm by Anubhav Saxena (xhpwn)
+An encryption algorithm by <b>xhpwn |Anubhav Saxena|</b>
 
-Work in progress for MD5 and SHA-256 hashing of strings
-
+Navigate to directory and run -
 ```
-$ ruby HackSaw_v1.0
+$ ruby HackSaw_v3.0.rb
 ```
 
-On first run, set custom encryption key of integer value.
+HackSaw is a Ruby script that uses modular addition and subtraction and a custom ASCII hash to perform encryption and decyption of text with custom user encryption keys.
