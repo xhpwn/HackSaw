@@ -2,6 +2,8 @@
 
 *Smoke testing for HackSaw_v4.0*
 
+Update - Over v1.0, v3.0 can now encrypt and decrypt infinitely long strings and supports a 128 character encryption key.
+
 An encryption algorithm by <b>xhpwn |Anubhav Saxena|</b>
 
 Navigate to directory and run -
