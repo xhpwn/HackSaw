@@ -20,7 +20,7 @@ $ sudo apt-get install ruby-full
 
 <b>Run the following command from the HackSaw directory :</b>
 ```
-$ ruby HackSaw_v3.0.rb
+$ ruby script.rb
 ```
 
 # Updates
