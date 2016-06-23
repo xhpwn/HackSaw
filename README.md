@@ -1,7 +1,7 @@
 # HackSaw
 128-bit encryption algorithm
 
-![HackSaw_v3.0](http://saxena.xyz/img/misc/hacksawdescriptor.png)
+![HackSaw](http://saxena.xyz/img/misc/hacksawdescriptor.png)
 
 HackSaw is a Ruby script that uses modular addition and subtraction and a custom ASCII hash to perform encryption and decyption of text with custom user encryption keys.
 
