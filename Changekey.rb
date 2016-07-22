@@ -24,6 +24,7 @@ class Changekey
         sleep(1)
         puts "\n> (1) Enter custom user encryption key"
         puts "> (2) Generate random user encryption key"
+	puts "> (3) Cancel changes"
         print "> Selector : "
         changeselector = gets.chomp
 
@@ -53,7 +54,10 @@ class Changekey
                 f.write(userKey)
                 puts "\n> Custom encryption key written."
                 sleep(1)
-            end
+		end
+	    when "3"
+		return 1
+	    
         end
 
     end

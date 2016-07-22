@@ -23,8 +23,11 @@ Graphics.Loadgraphic()
 
 userKey = ""
 
-# Encryption key check
 userKey = Keycheck.check()
+
+puts "\nFound existing encryption key => %s" % [userKey]
+
+# Encryption key check
 
 begin
 puts "\nChoose module :\n\n"

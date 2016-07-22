@@ -7,7 +7,6 @@ class Keycheck
         # Pulls existing encryption key from key.txt
         rootFile = File.new("key.txt", "r+")
         userKey = rootFile.sysread(128)
-        puts "\nFound existing encryption key => %s" % [userKey]
         rootFile.close
         sleep(1)
 
