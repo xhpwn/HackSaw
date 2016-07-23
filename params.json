@@ -1,0 +1,6 @@
+{
+  "name": "Hacksaw",
+  "tagline": "128-bit encryption algorithm",
+  "body": "### HackSaw\r\n128-bit encryption algorithm\r\n\r\nHackSaw is a Ruby script that uses modular addition and subtraction and a custom ASCII hash to perform encryption and decyption of text with custom user encryption keys.\r\n\r\n### Getting Ruby\r\n\r\n<b>OS X Users :</b>\r\n```\r\n$ brew install ruby\r\n```\r\n<b>Debian/GNU/Linux :</b>\r\n```\r\n$ sudo apt-get install ruby-full\r\n```\r\n### Running HackSaw\r\n\r\n<b>Run the following command from the HackSaw directory :</b>\r\n```\r\n$ ruby script.rb\r\n```\r\n\r\n### Updates\r\n\r\n- Over v1.0, v3.0 can now encrypt and decrypt infinitely long strings and supports a 128 character encryption key.\r\n\r\n- HackSaw is a Ruby script that uses modular addition and subtraction and a custom ASCII hash to perform encryption and decyption of text with custom user encryption keys.\r\n\r\n- *Currently smoke testing for HackSaw_v4.0*",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
