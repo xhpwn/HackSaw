@@ -32,11 +32,12 @@ class Changekey
             when "1"
                 File.open("key.txt", "w") do |f|
                 print "\n> Input custom user encryption key : "
-                sleep(1)
                 userKey = gets.chomp
                 f.write(userKey)
+                puts userKey
                 puts "\n> Custom encryption key written."
-                end
+                f.close
+            end
 
             when "2"
                 File.open("key.txt", "w") do |f|
@@ -53,13 +54,12 @@ class Changekey
                 end
                 f.write(userKey)
                 puts "\n> Custom encryption key written."
+                puts "\n> Your new encryption key - %s" % [userKey]
                 sleep(1)
-		end
-	    when "3"
-		return 1
-	    
-        end
-
+                f.close
+            end
+            when "3"
+		        return 1
+            end
     end
-
 end

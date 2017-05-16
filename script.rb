@@ -23,13 +23,10 @@ Graphics.Loadgraphic()
 
 userKey = ""
 
-userKey = Keycheck.check()
-
-puts "\nFound existing encryption key => %s" % [userKey]
-
 # Encryption key check
 
 begin
+userKey = Keycheck.check()
 puts "\nChoose module :\n\n"
 puts "(1) HackSaw Encryptor"
 puts "(2) HackSaw Decryptor"

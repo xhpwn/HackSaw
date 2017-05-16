@@ -2,10 +2,9 @@ class Graphics
 
     def self.Watermark()
 
-        puts "\n"
         puts "===================================="
         puts "HackSaw - The Encryption Project"
-        puts "Copyright (C) 2016 Anubhav Saxena"
+        puts "Copyright (C) 2017 Anubhav Saxena"
         puts "http://saxena.xyz"
         puts "===================================="
         sleep(1)
@@ -22,6 +21,10 @@ class Graphics
             $i += 1
         end while $i < 10
         puts "."
+
+        puts "\n"
+        puts "Welcome to HackSaw v3.0, the ASCII encryptor."
+        sleep(0.5)
 
     end
 
